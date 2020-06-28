@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "a393656d-ed9c-4f62-a516-de385a8aad9b",
+		"name": "Auto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Crear Auto",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n    \t\"id\": 1, \n    \t\"marca\": \"Audi\",\n    \t\"anno\": 2020,\n    \t\"capacidad\": 4,\n    \t\"precio\": 12000\n    }\n    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8100/api/v1/autos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8100",
+					"path": [
+						"api",
+						"v1",
+						"autos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener auto",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8100/api/v1/autos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8100",
+					"path": [
+						"api",
+						"v1",
+						"autos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ActualizarAuto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8100/api/v1/autos/1/nuevoprecio/15000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8100",
+					"path": [
+						"api",
+						"v1",
+						"autos",
+						"1",
+						"nuevoprecio",
+						"15000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Auto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8100/api/v1/autos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8100",
+					"path": [
+						"api",
+						"v1",
+						"autos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
